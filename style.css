@@ -1,0 +1,736 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --blue: #2B3499;
+    --orange: #FF6C22;
+    --light-orange:#FF9209;
+    --vlightorgane: #FFD099;
+    --fontsize: 50px;
+    --pOm: 5rem
+}
+h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+h3{
+    font-size:40px;
+    font-weight: 700;
+}
+.flex{
+    display: flex;
+}
+a{
+    text-decoration:none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+
+/* utilities end here */
+
+.top-banner{
+    text-align: center;
+    background-color: var(--blue);
+    font-weight: 700;
+    color: #fff;
+    padding: 4px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+ .hamburger{
+    display: none;
+}
+
+.nav-links li:hover{
+    text-decoration: underline;
+}
+.nav-links li{
+    transition: 2s;
+}
+
+.nav-bar{
+    justify-content: space-between;
+    padding: 10px var(--pOm);
+    align-items: center;
+    background-color: var(--orange);
+}
+.nav-bar img{
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-links ul{  
+    justify-content: end;
+    gap: 20px;
+    display: flex;
+}
+.hover-links{
+    font-weight: 700;
+}
+
+
+/* main content  */
+.homepage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url("images/All\ Kinds\ of\ Engineering\ Services\ and\ operations\(MEP\)...jpg");
+    background-position: center 65%;
+    background-size: cover;
+    backdrop-filter: blur(1);
+  }
+  
+  .homepage::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .homepage .content {
+    display: flex;
+    height: 85%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .homepage .content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .homepage .content .text {
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .content a {
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid #fff;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.3);
+  }
+  
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url("images/All\ Kinds\ of\ Engineering\ Services\ and\ operations\(MEP\)...jpg");
+    background-position: center 65%;
+    background-size: cover;
+    display: flex;
+    height: 85%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+/* .content-img img{
+    max-width: auto;
+    object-fit: contain;
+} */
+.aboutus h1{
+    text-align: center;
+}
+
+.contents{
+    text-align: center;
+    padding: 10px 20rem;
+    text-align: justify;
+    align-items: center;
+}
+
+.contents img{
+}
+
+.mission{
+    padding: 50px 20rem;
+}
+.mc{
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.mc img{
+    width: 350px;
+}
+.vission{
+    padding: 50px 20rem;
+}
+.vc{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.vc img{
+    width: 350px;
+}
+/*   services cards */
+.sh{
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+.services{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.services h3{
+    padding: 50px 20rem;
+    text-decoration: underline;
+}
+.engineering{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.engineering p{
+    padding: 10px;
+}
+.energy{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.energy p{
+    padding:10px;
+}
+.cards{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    border: 8px solid var(--light-orange);
+    margin: 10px var(--pOm);
+    position: relative;
+    margin-bottom: 50px;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #1f3d4738;
+    border-radius: 10px;
+}
+/* .card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding:20px;
+    transition: 2s;
+    text-transform: capitalize;
+}
+ .cards:hover .card-body{ */
+    /* right: 0;
+ } */
+ /* .card-title button{
+    background-color: var(--orange);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 1s;
+ } */
+
+ .card-title button:hover{
+    background-color: var(--vlightorgane);
+    text-decoration: underline;
+ }
+/* products start */
+
+.product{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.product p{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+ /* contact form  */
+ .contactus{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 5rem;
+    background-color: var(--orange);
+    color:#000;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .contactleft{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  }
+  
+  .contactright form{
+   display: flex;
+  flex-direction: column;
+  }
+  
+  .contactright form button {
+    padding-top: 200px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.2s ease;
+  }
+  
+  .contactright form button:hover {
+    background: #525252;
+  }
+  
+  
+  .contactright form textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    height: 150px;
+    outline: none;
+    resize: vertical;
+    border: 1px solid #bfbfbf;
+  }
+  
+  .contactright form input {
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 600px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+  }
+  
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--blue);
+    padding: 2px ;
+    text-align: center;
+  }
+  
+  
+  
+  .foo{
+    color: #fff;
+  }
+  
+  .foo{
+    padding: 0;
+  }
+  .nav-toggle{
+    display: none;
+  }
+
+@media screen and (max-width: 991px){
+    .nav-toggle{
+        display: block;
+    }
+    .nav-links ul{
+        flex-direction: column;
+       
+        text-align: center;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: var(--orange);
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 2s;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .nav-bar{
+        position: relative;
+        overflow: initial;
+    }
+    :root{
+        --blue: #2B3499;
+        --orange: #FF6C22;
+        --light-orange:#FF9209;
+        --vlightorgane: #FFD099;
+        --fontsize: 50px;
+        --pOm: 2rem
+    }
+    .top-banner{
+        font-size: 10px;
+    }
+    .content p{
+        font-size: 20px!important;
+        padding:0 !important;
+    }
+    .contents, .mission, .vission{
+        flex-direction: column;
+        padding: 10px 10rem;
+    }
+    .mc , .vc{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    h3{
+        font-size:30px;
+        font-weight: 700;
+    }
+    .flex{
+        display: flex;
+    }
+    a{
+        text-decoration:none;
+        color: #000;
+    }
+    li{
+        list-style: none;
+    }
+    .eng {
+        text-align: center;
+        padding: 10px 10rem !important;
+    }
+    .engg{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1520px){
+    .contents, .mission, .vission{
+        flex-direction: column;
+        padding: 10px 10rem;
+    }
+    .mc , .vc{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    h3{
+        font-size:30px;
+        font-weight: 700;
+    }
+    .flex{
+        display: flex;
+    }
+    a{
+        text-decoration:none;
+        color: #000;
+    }
+    li{
+        list-style: none;
+    }
+    .eng {
+        text-align: center;
+        padding: 10px 10rem !important;
+    }
+    .engg{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .cards{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        /* overflow: hidden; */
+        border: 8px solid var(--light-orange);
+        margin: 10px var(--pOm);
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .card-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: #1f3d4738;
+        border-radius: 10px;
+    }
+    .contactus{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 830px){
+    .cards{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        /* overflow: hidden; */
+        border: 8px solid var(--light-orange);
+        margin: px 2rem;
+        margin-bottom: 50px;
+    }
+    .card-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: #1f3d4738;
+        border-radius: 10px;
+    }
+    .contactus{
+        flex-direction: column;
+    }
+    .services{
+
+    }
+}
+@media screen and (max-width: 500px){
+    .engineering{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .engineering p{
+        padding: 10px;
+    }
+    .energy{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    h1{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    h3{
+        font-size:12px;
+        font-weight: 700;
+    }
+    .flex{
+        display: flex;
+    }
+    a{
+        text-decoration:none;
+        color: #000;
+    }
+    li{
+        list-style: none;
+    }
+    p{
+       font-size: 8px;
+    }
+    .contents, .mission,.vission{
+        text-align: center;
+        padding: 10px 2rem;
+        text-align: justify;
+        align-items: center;
+    }
+    .services h3{
+        padding: 10px 2rem;
+        text-decoration: underline;
+    }
+    .vc img, .mc img, .contents img{
+        width: 70%;
+    }
+    .cards{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        /* overflow: hidden; */
+        border: 8px solid var(--light-orange);
+        margin: 10px var(--pOm);
+        position: relative;
+
+    }
+    .card-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: #1f3d4738;
+        border-radius: 10px;
+    }
+    .sh{
+        text-align: center;
+        padding-block: 20px;
+        text-decoration: underline;
+    }
+    .contactright form input {
+        height: 45px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: auto;
+        font-size: 16px;
+        outline: none;
+        border: 1px solid #bfbfbf;
+      }
+      .contactus{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 5rem;
+        background-color: var(--orange);
+        color:#000;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: space-between;
+        height: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .contactleft{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: justify;
+        }
+        .contactus span{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .contactus p{
+            font-size: 20px ;
+        }  
+        @keyframes slide-fade-in{
+            from{
+                opacity: 0;
+                transform: translateY(5vh);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+          }
+          @media (prefers-reduced-motion: no-preference){
+            .aboutus,.mission,.vission,.sh,.engg,.eng,.prd,.cards{
+                view-timeline-name: --item-timeline;
+                animation: slide-fade-in;
+                animation-timeline: --item-timeline;
+                animation: contain 90% and 100%;
+            }
+          }
+         
+}
+
+@keyframes slide-fade-in{
+    from{
+        opacity: 0;
+        transform: translateY(50vh);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .aboutus,.mission,.vission,.sh,.engg,.eng,.prd,.cards{
+        view-timeline-name: --item-timeline;
+        animation: slide-fade-in;
+        animation-timeline: --item-timeline;
+        animation: contain 90% and 100%;
+    }
+  }
